@@ -55,13 +55,9 @@ class LoginBody extends StatelessWidget {
                   SizedBox(
                     height: 12.h,
                   ),
-                  SizedBox(
-                    height: 100.h,
-                  ),
+                  SizedBox(height: 100.h),
                   LoginForm(),
-                  SizedBox(
-                    height: 80.h,
-                  ),
+                  SizedBox(height: 80.h),
                   LoginButton(),
                   SizedBox(
                     height: 80.h,

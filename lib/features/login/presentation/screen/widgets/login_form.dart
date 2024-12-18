@@ -41,15 +41,15 @@ class LoginForm extends StatelessWidget {
               color: AppColor.cadetGrey,
               size: 24.sp,
             ),
-            obscureText: loginCubit.isPasswordObscure,
+            obscureText: !loginCubit.isPasswordObscure,
             suffixIcon: IconButton(
               onPressed: () {
                 loginCubit.passwordObscureChange();
               },
               icon: Icon(
                 loginCubit.isPasswordObscure
-                    ? Icons.visibility_off
-                    : Icons.visibility,
+                    ? Icons.visibility
+                    : Icons.visibility_off,
                 size: 24.sp,
                 color: AppColor.cadetGrey,
               ),

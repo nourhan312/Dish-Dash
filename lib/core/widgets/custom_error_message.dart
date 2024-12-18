@@ -17,7 +17,7 @@ class CustomMessage extends StatelessWidget {
         padding: EdgeInsets.symmetric(horizontal: 18.w, vertical: 10.h),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12.r),
-          color: backgroundColor ?? Colors.red,
+          color: backgroundColor ?? Colors.brown.shade700,
         ),
         child: Text(
           error,

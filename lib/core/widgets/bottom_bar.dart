@@ -21,7 +21,6 @@ class BottomNavBarState extends State<BottomNavBar> {
   final List<Widget> screens = [
     const HomeScreen(),
     const SearchScreen(),
-    const Category(),
     const SavedScreen(),
   ];
 
@@ -38,11 +37,6 @@ class BottomNavBarState extends State<BottomNavBar> {
           ),
           Icon(
             Icons.search,
-            size: 30,
-            color: Colors.white,
-          ),
-          Icon(
-            Icons.category_outlined,
             size: 30,
             color: Colors.white,
           ),

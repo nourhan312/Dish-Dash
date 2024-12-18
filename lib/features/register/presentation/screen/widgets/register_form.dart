@@ -58,15 +58,15 @@ class RegisterForm extends StatelessWidget {
               color: AppColor.cadetGrey,
               size: 24.sp,
             ),
-            obscureText: registerCubit.isPasswordObscure,
+            obscureText: !registerCubit.isPasswordObscure,
             suffixIcon: IconButton(
               onPressed: () {
                 registerCubit.passwordObscureChange();
               },
               icon: Icon(
                 registerCubit.isPasswordObscure
-                    ? Icons.visibility_off
-                    : Icons.visibility,
+                    ? Icons.visibility
+                    : Icons.visibility_off,
                 size: 24.sp,
                 color: AppColor.cadetGrey,
               ),
@@ -88,15 +88,15 @@ class RegisterForm extends StatelessWidget {
               color: AppColor.cadetGrey,
               size: 24.sp,
             ),
-            obscureText: registerCubit.isConfirmPasswordObscure,
+            obscureText: !registerCubit.isConfirmPasswordObscure,
             suffixIcon: IconButton(
               onPressed: () {
                 registerCubit.confirmPasswordObscureChange();
               },
               icon: Icon(
                 registerCubit.isConfirmPasswordObscure
-                    ? Icons.visibility_off
-                    : Icons.visibility,
+                    ? Icons.visibility
+                    : Icons.visibility_off,
                 size: 24.sp,
                 color: AppColor.cadetGrey,
               ),
